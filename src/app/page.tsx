@@ -10,12 +10,19 @@ export default function HomePage() {
         <p className="text-lg text-gray-300 mb-8">
           Discover showtimes, select your seat, and enjoy a seamless movie booking experience.
         </p>
+        <div className='justify-between'>
         <Link
-          href="/movies"
-          className="inline-block px-6 py-3 text-lg bg-blue-600 hover:bg-blue-700 rounded transition font-semibold"
+          href="/register"
+          className="inline-block px-6 py-3 text-lg bg-blue-600 hover:bg-blue-700 rounded-2xl transition font-semibold mr-2"
         >
-          Browse Movies
+          Register
         </Link>
+        <Link
+          href="/login"
+          className="inline-block px-6 py-3 text-lg bg-blue-600 hover:bg-blue-700 rounded-2xl transition font-semibold ml-2">
+          Login
+        </Link>
+        </div>
       </div>
     </main>
   );
